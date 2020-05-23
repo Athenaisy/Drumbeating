@@ -1,0 +1,475 @@
+html,body,.section{
+	min-height: 600px;
+	min-width: 1000px;
+	/* 最小宽度和高度  以防变形 */
+}
+/*8个背景样式*/
+#fp-nav ul li a span{  
+	/* 提高层叠性 */
+	background: pink !important;
+}
+/* 第一屏幕制作 */
+
+.section1{
+    background: #fadd67 url("../images/t1fpyqfltdxxaiulhh-990-600.png") no-repeat center bottom;
+ 
+}
+.fly{
+	position: absolute;
+	right: 20%;
+	top : 10% ;
+}
+.shirt01{
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	bottom: 335px;
+}
+.goods{
+	position: absolute;
+	left: 50%;
+	margin-left: -400px;
+	bottom: 150px;
+}
+/* animation  动画 */
+
+
+/* 第二屏开始 */
+.section2{
+    background: #84a2d4  url(../images/t1zdgpfi8exxca6rfn-2000-600.png) no-repeat center bottom;
+	z-index: 2;
+}
+.computer{
+	width:700px;
+	height: 500px;
+	position:absolute;
+	 left : 50%;
+	/* margin-left: 495px ; */ 
+	/* background:rgb(0,0,0,.3) ; */
+	transform:translateX(-50%);
+	bottom: 0;
+	}
+.search {
+	width:222px;
+	height: 45px;
+	background: url(../images/search.png) no-repeat;
+	right:-30px;
+	bottom:300px;
+	position: absolute;
+}
+.search-words{
+	position: absolute;
+	right:32px;
+	top:5px;
+	opacity: 0;
+	/* 做淡入淡出的的效果 */
+}
+.search-02-1{
+	position: absolute;
+	right:250px;
+	bottom:300px;
+	display: none;
+	/* 不须要淡入淡出  立马出现 */
+}
+.goods-02{
+	height: 100px;
+	position: absolute;
+	bottom: 217px;
+	right: 140px;
+	display: none;
+}
+.words-01{
+	position: absolute;
+	left:50%;
+	/* 水平居中 */
+	transform: translateX(-50%);
+	bottom:550px;
+}
+.words-02{
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	bottom:550px;
+	opacity: 0;
+}
+.shirt-02{
+	position: absolute;
+	left: 233px;
+	bottom: 348px;
+	width: 100px;
+	display: none;
+	z-index: 10;
+}
+.cover{
+	position: absolute;
+	bottom: 334px;
+	right: 365px;
+	height: 90px;
+	width: 101px;
+	background-color: white;
+	z-index: 5;
+	display: none;
+}
+/* 第三屏制作 start */
+.section3{
+	background: #ef674d;
+	z-index: 1;
+}
+.main{
+	position: absolute;
+	width: 700px;
+	height: 500px;
+	background: url(../images/main.png) no-repeat center center;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 50px;
+	
+}
+.select{
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	bottom: 0;
+	right: 8px;
+	
+}
+.btn{
+	position: absolute;
+	bottom:  10px;
+}
+/* 沙发 */
+.shirt-03,
+.t1f{
+	position: absolute;
+	left:115px;
+	bottom:200px;
+	display: none;
+}
+
+.img{
+	position: absolute;
+	top: 0;
+}
+.img-01-a,
+.btn-01-a{
+	opacity: 0;
+	/* 这里先不用display 而用 opacity 淡入效果*/
+}
+/* 第三屏制作 end */
+/* 第四屏制作 start */
+.section4{
+	background: #efd url(../images/t1iresfnxaxxca6rfn-2000-600.png) no-repeat center bottom;
+	
+}
+.cloud{
+	position: absolute;
+	left: 50%;
+	bottom: 480px;
+}
+.word{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 460px;
+}
+.words-04-a{
+	opacity: 0;
+}
+.car{
+	width: 500px;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 5;
+	
+}
+.car-img{
+	position: absolute;
+	bottom: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+	/* 负值往下叠加 */
+	display: none;
+	
+} 
+.note{
+	position: absolute;
+	bottom: 180px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+}
+.note-img{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	opacity: 0;
+}
+/*第四屏制作end  */
+/* 第五屏制作start */
+.section5 {
+	background: #d04759  url(../images/t1yisqfa4exxa3gmkg-2000-1500.png);
+	/* overflow: hidden; */
+	perspective: 500;
+	-webkit-perspective: 500;
+	z-index: 2;
+}
+.words-05{
+	position: absolute;
+	left: 20%;
+	top: 10%;
+	opacity: 0;
+}
+.words-05-a{
+	animation: words5 3s forwards;
+	/* animation-fill-mode: forwards;   让我们的动画保持最后一帧 */
+	
+}
+@keyframes words5{
+	100%{
+		opacity: 1;
+		transform: translateZ(100px) rotateY(360deg);
+	}
+}
+.card-05{
+	position: absolute;
+	left: 20%;
+	bottom: 200px;
+	z-index: 10;
+}
+.order-05{
+	position: absolute;
+	left: 27%;
+	bottom: 270px;
+	
+}
+
+.t1f-05{
+	position: absolute;
+	bottom: 800px;
+	left: 25%;
+	display: none;
+}
+.mouse-05{
+	position: absolute;
+	right: 20%;
+	bottom: 200px;
+}
+.mouse-05-a{
+	position: absolute;
+	right: 20%;
+	bottom: 200px;
+	display: none;
+}
+.hand-05{
+	position: absolute;
+	right: 25%;
+	bottom: -375px;
+}
+.overFlow{    /* 切掉鼠标的小尾巴 */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+/* 第五屏制作end */
+/* 第六屏制作 start */
+.section6 {
+	background: #84d9ed url(../images/t1dvj.fn0gxxb0_fua-2500-600.png) no-repeat 25% 100%;
+}
+.box-06{
+	position: absolute;
+	left: 123px;
+	bottom: 450px;
+	z-index: 5;
+}
+.car-06{
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	z-index: 6;
+	
+}
+.cloud-06{
+	position: absolute;
+	left: 50%;
+	bottom: 500px;
+	animation: cloud6 30s linear infinite;
+}
+@keyframes cloud6{
+	50%{
+		left: 15%;
+	}
+	100%{
+		left: 50%;
+	}
+}
+.pop-06{
+	position: absolute;
+	bottom: 119px;
+	right: 48%;
+}
+.boy{
+	position: absolute;
+	right: 50%;
+	bottom: 0;
+	height: 100px;
+}
+.girl{
+	position: absolute;
+	right: 315px;
+	bottom: 116px;
+	height: 123px;
+	display: none;
+	z-index: 6;
+}
+.door{
+	position: absolute;
+	right: 285px;
+	bottom: 116px;
+	opacity: 0;	
+}
+.pop-07{
+	position: absolute;
+	right: 445px;
+	bottom: 400px;
+	z-index: 4;
+	display: none;
+}
+.words-06-a{
+	position: absolute;
+	left: 30%;
+	bottom: 479px;
+	display: none;
+}
+/* 第六屏制作 end */
+/* 第七屏制作 start */
+.section7 {
+	background:url(../images/t1wf1tfctaxxa3gmkg-2000-1500.png) no-repeat 50% 100%;
+}
+.star{
+	position: absolute;
+	left: 50%;
+	bottom: 439px;
+	margin-left: -295px;
+	width: 0;
+	height: 20px;
+	background: url(../images/star.png) no-repeat;
+	background-size: 97px;
+}
+.good-07{
+	position: absolute;
+	left: 50%;
+	bottom: 382px;
+	margin-left: -289px;
+	display: none;
+}
+
+
+
+/* 第七屏制作 end */
+/* 第八屏制作 start */
+.section8 {
+	background: url(../images/ksgw.png);
+}
+.beginShoping{
+	position: absolute;
+	left: 50%;
+	bottom: 365px;
+	transform: translateX(-50%);
+}
+
+.btn-08-a{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.again{
+	position: absolute;
+	left: 50%;
+	bottom: 403px;
+	margin-left: 243px;
+	cursor: pointer;
+}
+.hand-08{
+	position: absolute;
+	left: 50%;
+	bottom: 449px;
+}
+
+/* 第八屏制作 end */
+/* 直接进入购物中心 */
+.go{
+	/* 固定定位 */
+	position:fixed;
+	top: 5%;
+	right:5%;
+	z-index:999;
+}
+.next{
+	position: fixed;
+	bottom: 120px;
+	right: 10%;
+	z-index: 99;
+}
+
+/* 动画组 */
+.next-updown{
+	animation: next 2s linear infinite;  
+	/* linear 匀速 */
+}
+@keyframes next{  
+	/* 类似于js的声明函数function */
+	50%{
+		bottom: 100px;
+	}
+	100% {
+		bottom: 120px;
+	}
+}
+.updown{
+	/* 类似于js的调用函数   动画名称 动画时间  匀速*/
+	animation: fly 3s linear  infinite;
+}
+.shirt-updown{
+	animation: shirt01 2.5s linear  infinite;
+}
+@keyframes fly{  
+	/* 类似于js的声明函数function */
+	0%{
+		top: 10%;
+	}
+	50%{
+		top: 15%;
+	}
+	100% {
+		top: 10%;
+	}
+}
+@keyframes shirt01{
+	
+		50%{
+			bottom: 350px;
+		}
+		100% {
+			bottom: 335px;
+		}
+	}
+	/* 云彩第一组 */
+.cloud-back1{
+	animation: cloud 60s linear infinite;
+}
+@keyframes cloud {
+	50%{
+		left: -10%;
+	}
+	100%{
+		left: 50%;
+	}
+}
+
